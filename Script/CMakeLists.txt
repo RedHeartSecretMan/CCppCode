@@ -1,0 +1,63 @@
+cmake_minimum_required(VERSION 3.21)
+
+project(Code1)
+project(Code2)
+project(Code3)
+project(Code4)
+project(Code5)
+project(Code6)
+project(Code7)
+project(Code8)
+project(Code9)
+project(Code10)
+project(Code11)
+
+
+set(CMAKE_C_STANDARD 17)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_C_COMPILER "clang")
+set(CMAKE_CXX_COMPILER "clang++")
+
+
+include_directories(includes/stdio)
+include_directories(includes/stdlib)
+include_directories(includes/iostream)
+
+
+AUX_SOURCE_DIRECTORY(0319/1 CFile1)
+AUX_SOURCE_DIRECTORY(0319/2 CFile2)
+AUX_SOURCE_DIRECTORY(0328/1 CFile3)
+AUX_SOURCE_DIRECTORY(0328/2 CFile4)
+AUX_SOURCE_DIRECTORY(0328/3 CFile5)
+AUX_SOURCE_DIRECTORY(0330/1 CFile6)
+AUX_SOURCE_DIRECTORY(0330/2 CFile7)
+AUX_SOURCE_DIRECTORY(0330/3 CFile8)
+AUX_SOURCE_DIRECTORY(0330/4 CFile9)
+AUX_SOURCE_DIRECTORY(0422/1 CFile10)
+AUX_SOURCE_DIRECTORY(0422/2 CFile11)
+
+
+message(${CFile1})
+message(${CFile2})
+message(${CFile3})
+message(${CFile4})
+message(${CFile5})
+message(${CFile6})
+message(${CFile7})
+message(${CFile8})
+message(${CFile9})
+message(${CFile10})
+message(${CFile11})
+
+
+add_executable(Code1 ${CFile1})
+add_executable(Code2 ${CFile2})
+add_executable(Code3 ${CFile3})
+add_executable(Code4 ${CFile4})
+add_executable(Code5 ${CFile5})
+add_executable(Code6 ${CFile6})
+add_executable(Code7 ${CFile7})
+add_executable(Code8 ${CFile8})
+add_executable(Code9 ${CFile9})
+add_executable(Code10 ${CFile10})
+add_executable(Code11 ${CFile11})

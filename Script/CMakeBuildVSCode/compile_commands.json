@@ -1,0 +1,57 @@
+[
+{
+  "directory": "/Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode",
+  "command": "clang -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu17 -o CMakeFiles/Code1.dir/0319/1/0319-1.c.o -c /Users/WangHao/学习/VSCode/Script/0319/1/0319-1.c",
+  "file": "/Users/WangHao/学习/VSCode/Script/0319/1/0319-1.c"
+},
+{
+  "directory": "/Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode",
+  "command": "clang -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu17 -o CMakeFiles/Code2.dir/0319/2/0319-2.c.o -c /Users/WangHao/学习/VSCode/Script/0319/2/0319-2.c",
+  "file": "/Users/WangHao/学习/VSCode/Script/0319/2/0319-2.c"
+},
+{
+  "directory": "/Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode",
+  "command": "clang++ -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/Code3.dir/0328/1/0328-1.cpp.o -c /Users/WangHao/学习/VSCode/Script/0328/1/0328-1.cpp",
+  "file": "/Users/WangHao/学习/VSCode/Script/0328/1/0328-1.cpp"
+},
+{
+  "directory": "/Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode",
+  "command": "clang -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu17 -o CMakeFiles/Code4.dir/0328/2/LNode.c.o -c /Users/WangHao/学习/VSCode/Script/0328/2/LNode.c",
+  "file": "/Users/WangHao/学习/VSCode/Script/0328/2/LNode.c"
+},
+{
+  "directory": "/Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode",
+  "command": "clang -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu17 -o CMakeFiles/Code5.dir/0328/3/SequenceTabel.c.o -c /Users/WangHao/学习/VSCode/Script/0328/3/SequenceTabel.c",
+  "file": "/Users/WangHao/学习/VSCode/Script/0328/3/SequenceTabel.c"
+},
+{
+  "directory": "/Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode",
+  "command": "clang++ -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/Code6.dir/0330/1/0330-1.cpp.o -c /Users/WangHao/学习/VSCode/Script/0330/1/0330-1.cpp",
+  "file": "/Users/WangHao/学习/VSCode/Script/0330/1/0330-1.cpp"
+},
+{
+  "directory": "/Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode",
+  "command": "clang++ -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/Code7.dir/0330/2/SequenceStack.cpp.o -c /Users/WangHao/学习/VSCode/Script/0330/2/SequenceStack.cpp",
+  "file": "/Users/WangHao/学习/VSCode/Script/0330/2/SequenceStack.cpp"
+},
+{
+  "directory": "/Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode",
+  "command": "clang++ -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/Code8.dir/0330/3/0330-3.cpp.o -c /Users/WangHao/学习/VSCode/Script/0330/3/0330-3.cpp",
+  "file": "/Users/WangHao/学习/VSCode/Script/0330/3/0330-3.cpp"
+},
+{
+  "directory": "/Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode",
+  "command": "clang -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu17 -o CMakeFiles/Code9.dir/0330/4/SString.c.o -c /Users/WangHao/学习/VSCode/Script/0330/4/SString.c",
+  "file": "/Users/WangHao/学习/VSCode/Script/0330/4/SString.c"
+},
+{
+  "directory": "/Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode",
+  "command": "clang++ -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/Code10.dir/0422/1/teststruct.cpp.o -c /Users/WangHao/学习/VSCode/Script/0422/1/teststruct.cpp",
+  "file": "/Users/WangHao/学习/VSCode/Script/0422/1/teststruct.cpp"
+},
+{
+  "directory": "/Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode",
+  "command": "clang++ -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/Code11.dir/0422/2/Huffmantree.cpp.o -c /Users/WangHao/学习/VSCode/Script/0422/2/Huffmantree.cpp",
+  "file": "/Users/WangHao/学习/VSCode/Script/0422/2/Huffmantree.cpp"
+}
+]

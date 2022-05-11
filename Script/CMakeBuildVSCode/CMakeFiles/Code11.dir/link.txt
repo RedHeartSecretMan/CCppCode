@@ -1,0 +1,1 @@
+clang++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Code11.dir/0422/2/Huffmantree.cpp.o -o Code11 
