@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "type": "shell",
+            "type": "cppbuild",
             "label": "C/C++: clang 生成活动文件",
             "command": "/usr/bin/clang",
             "args": [
@@ -30,7 +30,7 @@
             }
         },
         {
-            "type": "shell",
+            "type": "cppbuild",
             "label": "C/C++: clang++ 生成活动文件",
             "command": "/usr/bin/clang++",
             "args": [
@@ -58,8 +58,62 @@
         },
         {
             "type": "cppbuild",
-            "label": "C/C++: gcc-11 生成活动文件",
-            "command": "/opt/homebrew/bin/gcc-11",
+            "label": "C/C++: gcc-12 生成活动文件",
+            "command": "/opt/homebrew/bin/gcc-12",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            }
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++-12 生成活动文件",
+            "command": "/opt/homebrew/bin/g++-12",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            }
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc 生成活动文件",
+            "command": "/usr/bin/gcc",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",

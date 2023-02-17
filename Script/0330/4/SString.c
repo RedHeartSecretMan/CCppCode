@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 typedef struct
 {
     // 每个字节存储一个字符
@@ -84,12 +85,12 @@ int KMPIndex(SString sm, SString sp)
 int main()
 {
     SString sm;
-    char MainStr[] = "i am wanghao";
+    char MainStr[] = "i am haowangwanghao";
     strcpy(sm.ch, MainStr);
     sm.length = strlen(MainStr);
 
     SString sp;
-    char PatternStr[] = "wang";
+    char PatternStr[] = "wangwang";
     strcpy(sp.ch, PatternStr);
     sp.length = strlen(PatternStr);
 

@@ -8,7 +8,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Code11
+# Project: Code18
 # Configurations: Debug
 # =============================================================================
 
@@ -49,7 +49,7 @@ build cmake_object_order_depends_target_Code1: phony || CMakeFiles/Code1.dir
 build CMakeFiles/Code1.dir/0319/1/0319-1.c.o: C_COMPILER__Code1_Debug /Users/WangHao/学习/VSCode/Script/0319/1/0319-1.c || cmake_object_order_depends_target_Code1
   DEP_FILE = CMakeFiles/Code1.dir/0319/1/0319-1.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu17
-  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream
+  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -I/Users/WangHao/学习/VSCode/Script/include/cstdlib
   OBJECT_DIR = CMakeFiles/Code1.dir
   OBJECT_FILE_DIR = CMakeFiles/Code1.dir/0319/1
 
@@ -81,7 +81,7 @@ build cmake_object_order_depends_target_Code2: phony || CMakeFiles/Code2.dir
 build CMakeFiles/Code2.dir/0319/2/0319-2.c.o: C_COMPILER__Code2_Debug /Users/WangHao/学习/VSCode/Script/0319/2/0319-2.c || cmake_object_order_depends_target_Code2
   DEP_FILE = CMakeFiles/Code2.dir/0319/2/0319-2.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu17
-  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream
+  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -I/Users/WangHao/学习/VSCode/Script/include/cstdlib
   OBJECT_DIR = CMakeFiles/Code2.dir
   OBJECT_FILE_DIR = CMakeFiles/Code2.dir/0319/2
 
@@ -113,7 +113,7 @@ build cmake_object_order_depends_target_Code3: phony || CMakeFiles/Code3.dir
 build CMakeFiles/Code3.dir/0328/1/0328-1.cpp.o: CXX_COMPILER__Code3_Debug /Users/WangHao/学习/VSCode/Script/0328/1/0328-1.cpp || cmake_object_order_depends_target_Code3
   DEP_FILE = CMakeFiles/Code3.dir/0328/1/0328-1.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
-  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream
+  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -I/Users/WangHao/学习/VSCode/Script/include/cstdlib
   OBJECT_DIR = CMakeFiles/Code3.dir
   OBJECT_FILE_DIR = CMakeFiles/Code3.dir/0328/1
 
@@ -145,7 +145,7 @@ build cmake_object_order_depends_target_Code4: phony || CMakeFiles/Code4.dir
 build CMakeFiles/Code4.dir/0328/2/LNode.c.o: C_COMPILER__Code4_Debug /Users/WangHao/学习/VSCode/Script/0328/2/LNode.c || cmake_object_order_depends_target_Code4
   DEP_FILE = CMakeFiles/Code4.dir/0328/2/LNode.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu17
-  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream
+  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -I/Users/WangHao/学习/VSCode/Script/include/cstdlib
   OBJECT_DIR = CMakeFiles/Code4.dir
   OBJECT_FILE_DIR = CMakeFiles/Code4.dir/0328/2
 
@@ -177,7 +177,7 @@ build cmake_object_order_depends_target_Code5: phony || CMakeFiles/Code5.dir
 build CMakeFiles/Code5.dir/0328/3/SequenceTabel.c.o: C_COMPILER__Code5_Debug /Users/WangHao/学习/VSCode/Script/0328/3/SequenceTabel.c || cmake_object_order_depends_target_Code5
   DEP_FILE = CMakeFiles/Code5.dir/0328/3/SequenceTabel.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu17
-  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream
+  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -I/Users/WangHao/学习/VSCode/Script/include/cstdlib
   OBJECT_DIR = CMakeFiles/Code5.dir
   OBJECT_FILE_DIR = CMakeFiles/Code5.dir/0328/3
 
@@ -209,7 +209,7 @@ build cmake_object_order_depends_target_Code6: phony || CMakeFiles/Code6.dir
 build CMakeFiles/Code6.dir/0330/1/0330-1.cpp.o: CXX_COMPILER__Code6_Debug /Users/WangHao/学习/VSCode/Script/0330/1/0330-1.cpp || cmake_object_order_depends_target_Code6
   DEP_FILE = CMakeFiles/Code6.dir/0330/1/0330-1.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
-  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream
+  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -I/Users/WangHao/学习/VSCode/Script/include/cstdlib
   OBJECT_DIR = CMakeFiles/Code6.dir
   OBJECT_FILE_DIR = CMakeFiles/Code6.dir/0330/1
 
@@ -241,7 +241,7 @@ build cmake_object_order_depends_target_Code7: phony || CMakeFiles/Code7.dir
 build CMakeFiles/Code7.dir/0330/2/SequenceStack.cpp.o: CXX_COMPILER__Code7_Debug /Users/WangHao/学习/VSCode/Script/0330/2/SequenceStack.cpp || cmake_object_order_depends_target_Code7
   DEP_FILE = CMakeFiles/Code7.dir/0330/2/SequenceStack.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
-  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream
+  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -I/Users/WangHao/学习/VSCode/Script/include/cstdlib
   OBJECT_DIR = CMakeFiles/Code7.dir
   OBJECT_FILE_DIR = CMakeFiles/Code7.dir/0330/2
 
@@ -273,7 +273,7 @@ build cmake_object_order_depends_target_Code8: phony || CMakeFiles/Code8.dir
 build CMakeFiles/Code8.dir/0330/3/0330-3.cpp.o: CXX_COMPILER__Code8_Debug /Users/WangHao/学习/VSCode/Script/0330/3/0330-3.cpp || cmake_object_order_depends_target_Code8
   DEP_FILE = CMakeFiles/Code8.dir/0330/3/0330-3.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
-  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream
+  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -I/Users/WangHao/学习/VSCode/Script/include/cstdlib
   OBJECT_DIR = CMakeFiles/Code8.dir
   OBJECT_FILE_DIR = CMakeFiles/Code8.dir/0330/3
 
@@ -305,7 +305,7 @@ build cmake_object_order_depends_target_Code9: phony || CMakeFiles/Code9.dir
 build CMakeFiles/Code9.dir/0330/4/SString.c.o: C_COMPILER__Code9_Debug /Users/WangHao/学习/VSCode/Script/0330/4/SString.c || cmake_object_order_depends_target_Code9
   DEP_FILE = CMakeFiles/Code9.dir/0330/4/SString.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu17
-  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream
+  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -I/Users/WangHao/学习/VSCode/Script/include/cstdlib
   OBJECT_DIR = CMakeFiles/Code9.dir
   OBJECT_FILE_DIR = CMakeFiles/Code9.dir/0330/4
 
@@ -337,7 +337,7 @@ build cmake_object_order_depends_target_Code10: phony || CMakeFiles/Code10.dir
 build CMakeFiles/Code10.dir/0422/1/teststruct.cpp.o: CXX_COMPILER__Code10_Debug /Users/WangHao/学习/VSCode/Script/0422/1/teststruct.cpp || cmake_object_order_depends_target_Code10
   DEP_FILE = CMakeFiles/Code10.dir/0422/1/teststruct.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
-  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream
+  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -I/Users/WangHao/学习/VSCode/Script/include/cstdlib
   OBJECT_DIR = CMakeFiles/Code10.dir
   OBJECT_FILE_DIR = CMakeFiles/Code10.dir/0422/1
 
@@ -369,7 +369,7 @@ build cmake_object_order_depends_target_Code11: phony || CMakeFiles/Code11.dir
 build CMakeFiles/Code11.dir/0422/2/Huffmantree.cpp.o: CXX_COMPILER__Code11_Debug /Users/WangHao/学习/VSCode/Script/0422/2/Huffmantree.cpp || cmake_object_order_depends_target_Code11
   DEP_FILE = CMakeFiles/Code11.dir/0422/2/Huffmantree.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
-  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream
+  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -I/Users/WangHao/学习/VSCode/Script/include/cstdlib
   OBJECT_DIR = CMakeFiles/Code11.dir
   OBJECT_FILE_DIR = CMakeFiles/Code11.dir/0422/2
 
@@ -389,12 +389,236 @@ build Code11: CXX_EXECUTABLE_LINKER__Code11_Debug CMakeFiles/Code11.dir/0422/2/H
   TARGET_FILE = Code11
   TARGET_PDB = Code11.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Code12
+
+
+#############################################
+# Order-only phony target for Code12
+
+build cmake_object_order_depends_target_Code12: phony || CMakeFiles/Code12.dir
+
+build CMakeFiles/Code12.dir/0501/1/loopdiv.cpp.o: CXX_COMPILER__Code12_Debug /Users/WangHao/学习/VSCode/Script/0501/1/loopdiv.cpp || cmake_object_order_depends_target_Code12
+  DEP_FILE = CMakeFiles/Code12.dir/0501/1/loopdiv.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -I/Users/WangHao/学习/VSCode/Script/include/cstdlib
+  OBJECT_DIR = CMakeFiles/Code12.dir
+  OBJECT_FILE_DIR = CMakeFiles/Code12.dir/0501/1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Code12
+
+
+#############################################
+# Link the executable Code12
+
+build Code12: CXX_EXECUTABLE_LINKER__Code12_Debug CMakeFiles/Code12.dir/0501/1/loopdiv.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Code12.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Code12
+  TARGET_PDB = Code12.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Code13
+
+
+#############################################
+# Order-only phony target for Code13
+
+build cmake_object_order_depends_target_Code13: phony || CMakeFiles/Code13.dir
+
+build CMakeFiles/Code13.dir/0501/2/0502.cpp.o: CXX_COMPILER__Code13_Debug /Users/WangHao/学习/VSCode/Script/0501/2/0502.cpp || cmake_object_order_depends_target_Code13
+  DEP_FILE = CMakeFiles/Code13.dir/0501/2/0502.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -I/Users/WangHao/学习/VSCode/Script/include/cstdlib
+  OBJECT_DIR = CMakeFiles/Code13.dir
+  OBJECT_FILE_DIR = CMakeFiles/Code13.dir/0501/2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Code13
+
+
+#############################################
+# Link the executable Code13
+
+build Code13: CXX_EXECUTABLE_LINKER__Code13_Debug CMakeFiles/Code13.dir/0501/2/0502.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Code13.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Code13
+  TARGET_PDB = Code13.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Code14
+
+
+#############################################
+# Order-only phony target for Code14
+
+build cmake_object_order_depends_target_Code14: phony || CMakeFiles/Code14.dir
+
+build CMakeFiles/Code14.dir/0723/1/1.cpp.o: CXX_COMPILER__Code14_Debug /Users/WangHao/学习/VSCode/Script/0723/1/1.cpp || cmake_object_order_depends_target_Code14
+  DEP_FILE = CMakeFiles/Code14.dir/0723/1/1.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -I/Users/WangHao/学习/VSCode/Script/include/cstdlib
+  OBJECT_DIR = CMakeFiles/Code14.dir
+  OBJECT_FILE_DIR = CMakeFiles/Code14.dir/0723/1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Code14
+
+
+#############################################
+# Link the executable Code14
+
+build Code14: CXX_EXECUTABLE_LINKER__Code14_Debug CMakeFiles/Code14.dir/0723/1/1.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Code14.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Code14
+  TARGET_PDB = Code14.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Code15
+
+
+#############################################
+# Order-only phony target for Code15
+
+build cmake_object_order_depends_target_Code15: phony || CMakeFiles/Code15.dir
+
+build CMakeFiles/Code15.dir/0723/2/1.cpp.o: CXX_COMPILER__Code15_Debug /Users/WangHao/学习/VSCode/Script/0723/2/1.cpp || cmake_object_order_depends_target_Code15
+  DEP_FILE = CMakeFiles/Code15.dir/0723/2/1.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -I/Users/WangHao/学习/VSCode/Script/include/cstdlib
+  OBJECT_DIR = CMakeFiles/Code15.dir
+  OBJECT_FILE_DIR = CMakeFiles/Code15.dir/0723/2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Code15
+
+
+#############################################
+# Link the executable Code15
+
+build Code15: CXX_EXECUTABLE_LINKER__Code15_Debug CMakeFiles/Code15.dir/0723/2/1.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Code15.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Code15
+  TARGET_PDB = Code15.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Code16
+
+
+#############################################
+# Order-only phony target for Code16
+
+build cmake_object_order_depends_target_Code16: phony || CMakeFiles/Code16.dir
+
+build CMakeFiles/Code16.dir/0901/1/mn.cpp.o: CXX_COMPILER__Code16_Debug /Users/WangHao/学习/VSCode/Script/0901/1/mn.cpp || cmake_object_order_depends_target_Code16
+  DEP_FILE = CMakeFiles/Code16.dir/0901/1/mn.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -I/Users/WangHao/学习/VSCode/Script/include/cstdlib
+  OBJECT_DIR = CMakeFiles/Code16.dir
+  OBJECT_FILE_DIR = CMakeFiles/Code16.dir/0901/1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Code16
+
+
+#############################################
+# Link the executable Code16
+
+build Code16: CXX_EXECUTABLE_LINKER__Code16_Debug CMakeFiles/Code16.dir/0901/1/mn.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Code16.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Code16
+  TARGET_PDB = Code16.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Code17
+
+
+#############################################
+# Order-only phony target for Code17
+
+build cmake_object_order_depends_target_Code17: phony || CMakeFiles/Code17.dir
+
+build CMakeFiles/Code17.dir/0901/2/nn.cpp.o: CXX_COMPILER__Code17_Debug /Users/WangHao/学习/VSCode/Script/0901/2/nn.cpp || cmake_object_order_depends_target_Code17
+  DEP_FILE = CMakeFiles/Code17.dir/0901/2/nn.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -I/Users/WangHao/学习/VSCode/Script/include/cstdlib
+  OBJECT_DIR = CMakeFiles/Code17.dir
+  OBJECT_FILE_DIR = CMakeFiles/Code17.dir/0901/2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Code17
+
+
+#############################################
+# Link the executable Code17
+
+build Code17: CXX_EXECUTABLE_LINKER__Code17_Debug CMakeFiles/Code17.dir/0901/2/nn.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Code17.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Code17
+  TARGET_PDB = Code17.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Code18
+
+
+#############################################
+# Order-only phony target for Code18
+
+build cmake_object_order_depends_target_Code18: phony || CMakeFiles/Code18.dir
+
+build CMakeFiles/Code18.dir/0920/1/count_one.c.o: C_COMPILER__Code18_Debug /Users/WangHao/学习/VSCode/Script/0920/1/count_one.c || cmake_object_order_depends_target_Code18
+  DEP_FILE = CMakeFiles/Code18.dir/0920/1/count_one.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu17
+  INCLUDES = -I/Users/WangHao/学习/VSCode/Script/includes/stdio -I/Users/WangHao/学习/VSCode/Script/includes/stdlib -I/Users/WangHao/学习/VSCode/Script/includes/iostream -I/Users/WangHao/学习/VSCode/Script/include/cstdlib
+  OBJECT_DIR = CMakeFiles/Code18.dir
+  OBJECT_FILE_DIR = CMakeFiles/Code18.dir/0920/1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Code18
+
+
+#############################################
+# Link the executable Code18
+
+build Code18: C_EXECUTABLE_LINKER__Code18_Debug CMakeFiles/Code18.dir/0920/1/count_one.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Code18.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Code18
+  TARGET_PDB = Code18.dbg
+
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode && /opt/homebrew/Cellar/cmake/3.22.3/bin/ccmake -S/Users/WangHao/学习/VSCode/Script -B/Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode
+  COMMAND = cd /Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode && /opt/homebrew/Cellar/cmake/3.23.2/bin/ccmake -S/Users/WangHao/学习/VSCode/Script -B/Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -406,7 +630,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode && /opt/homebrew/Cellar/cmake/3.23.1/bin/cmake --regenerate-during-build -S/Users/WangHao/学习/VSCode/Script -B/Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode
+  COMMAND = cd /Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode && /opt/homebrew/Cellar/cmake/3.24.1/bin/cmake --regenerate-during-build -S/Users/WangHao/学习/VSCode/Script -B/Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -424,7 +648,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/WangHao/学习/VSCode/Script/CMakeBuildVSCode
 
-build all: phony Code1 Code2 Code3 Code4 Code5 Code6 Code7 Code8 Code9 Code10 Code11
+build all: phony Code1 Code2 Code3 Code4 Code5 Code6 Code7 Code8 Code9 Code10 Code11 Code12 Code13 Code14 Code15 Code16 Code17 Code18
 
 # =============================================================================
 # Built-in targets
@@ -433,14 +657,14 @@ build all: phony Code1 Code2 Code3 Code4 Code5 Code6 Code7 Code8 Code9 Code10 Co
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.1/CMakeCCompiler.cmake CMakeFiles/3.23.1/CMakeCXXCompiler.cmake CMakeFiles/3.23.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Users/WangHao/学习/VSCode/Script/CMakeLists.txt /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Compiler/AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.1/CMakeCCompiler.cmake CMakeFiles/3.24.1/CMakeCXXCompiler.cmake CMakeFiles/3.24.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.1/CMakeCCompiler.cmake CMakeFiles/3.23.1/CMakeCXXCompiler.cmake CMakeFiles/3.23.1/CMakeSystem.cmake: phony
+build /Users/WangHao/学习/VSCode/Script/CMakeLists.txt /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Compiler/AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/Cellar/cmake/3.24.1/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.1/CMakeCCompiler.cmake CMakeFiles/3.24.1/CMakeCXXCompiler.cmake CMakeFiles/3.24.1/CMakeSystem.cmake: phony
 
 
 #############################################

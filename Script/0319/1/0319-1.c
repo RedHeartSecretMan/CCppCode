@@ -19,6 +19,14 @@ int main()
   iadd(b1);
   iadd(b2);
 
+  int a3 = 3;
+  a3+=a3-=a3*a3;
+
+  int x, y;
+  x=y=2;
+  x=x-2&&(y=y+1);
+  
+
   typedef struct
   {
     // 每个字节存储一个字符

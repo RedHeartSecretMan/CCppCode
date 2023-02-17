@@ -1,0 +1,213 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Code18",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Code1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code1-Debug-3301354facee229b476f.json",
+					"name" : "Code1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code10::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code10-Debug-fcce7dacc96b97fa0db7.json",
+					"name" : "Code10",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code11::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code11-Debug-ebeca00ddb985c1ce781.json",
+					"name" : "Code11",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code12::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code12-Debug-5eba43e1676d93e99feb.json",
+					"name" : "Code12",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code13::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code13-Debug-df7b49fce04b80de041f.json",
+					"name" : "Code13",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code14::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code14-Debug-16c275441854082661ce.json",
+					"name" : "Code14",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code15::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code15-Debug-c97e025c4b2181a1cf98.json",
+					"name" : "Code15",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code16::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code16-Debug-47eb80c0dc3aedc8e0cd.json",
+					"name" : "Code16",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code17::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code17-Debug-4dfd685824239eabac0f.json",
+					"name" : "Code17",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code18::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code18-Debug-dbacf0a67154909ab1fd.json",
+					"name" : "Code18",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code2-Debug-5ad121f3faf9be25ffa4.json",
+					"name" : "Code2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code3-Debug-90b0ca5a1a4db9de847f.json",
+					"name" : "Code3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code4-Debug-05980732fd9fae9cd577.json",
+					"name" : "Code4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code5-Debug-3ba243f602446a4a8b9e.json",
+					"name" : "Code5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code6-Debug-fe4dfbd76e652f096686.json",
+					"name" : "Code6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code7-Debug-031cae07ed8eb09a269c.json",
+					"name" : "Code7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code8::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code8-Debug-f6e845b2643220526e44.json",
+					"name" : "Code8",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code9::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code9-Debug-2d8f21464aa801b1c151.json",
+					"name" : "Code9",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/WangHao/\u5b66\u4e60/VSCode/Script/CMakeBuildVSCode",
+		"source" : "/Users/WangHao/\u5b66\u4e60/VSCode/Script"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
