@@ -18,6 +18,7 @@ project(Code15)
 project(Code16)
 project(Code17)
 project(Code18)
+project(Code19)
 
 
 set(CMAKE_C_STANDARD 17)
@@ -50,6 +51,7 @@ AUX_SOURCE_DIRECTORY(0723/2 CFile15)
 AUX_SOURCE_DIRECTORY(0901/1 CFile16)
 AUX_SOURCE_DIRECTORY(0901/2 CFile17)
 AUX_SOURCE_DIRECTORY(0920/1 CFile18)
+AUX_SOURCE_DIRECTORY(0314/1 CFile19)
 
 
 message(${CFile1})
@@ -70,6 +72,7 @@ message(${CFile15})
 message(${CFile16})
 message(${CFile17})
 message(${CFile18})
+message(${CFile19})
 
 
 add_executable(Code1 ${CFile1})
@@ -90,3 +93,4 @@ add_executable(Code15 ${CFile15})
 add_executable(Code16 ${CFile16})
 add_executable(Code17 ${CFile17})
 add_executable(Code18 ${CFile18})
+add_executable(Code19 ${CFile19})
