@@ -1,0 +1,1 @@
+gcc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Code18.dir/20220920/1/count_one.c.o -o Code18 

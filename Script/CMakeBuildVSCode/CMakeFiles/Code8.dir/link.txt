@@ -1,1 +1,0 @@
-g++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names "CMakeFiles/Code8.dir/0330/3/0330-3.cpp.o" -o Code8 
