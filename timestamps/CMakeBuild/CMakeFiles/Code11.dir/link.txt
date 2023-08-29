@@ -1,1 +1,0 @@
-g++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Code11.dir/20220422/2/Huffmantree.cpp.o -o Code11 

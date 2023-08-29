@@ -1,1 +1,0 @@
-gcc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Code9.dir/20220330/4/SString.c.o -o Code9 
