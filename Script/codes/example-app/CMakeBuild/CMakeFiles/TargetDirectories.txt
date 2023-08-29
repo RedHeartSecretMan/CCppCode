@@ -1,0 +1,3 @@
+/Users/WangHao/Sites/学习/CCpp/Script/example-app/CMakeBuild/CMakeFiles/example-app.dir
+/Users/WangHao/Sites/学习/CCpp/Script/example-app/CMakeBuild/CMakeFiles/edit_cache.dir
+/Users/WangHao/Sites/学习/CCpp/Script/example-app/CMakeBuild/CMakeFiles/rebuild_cache.dir
