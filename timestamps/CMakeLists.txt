@@ -4,6 +4,9 @@ cmake_minimum_required(VERSION 3.21 FATAL_ERROR)
 # 设置项目名字
 project(sample_code)
 
+# 寻找外部库路径
+find_package(OpenCV REQUIRED)
+
 # 设置 C/CPP 编译器以及标准版本
 set(CMAKE_C_COMPILER "gcc")
 set(CMAKE_CXX_COMPILER "g++")
@@ -32,6 +35,7 @@ aux_source_directory(20220920/1 source_file_18)
 aux_source_directory(20230314/1 source_file_19)
 aux_source_directory(20230314/2 source_file_20)
 aux_source_directory(20230314/3 source_file_21)
+aux_source_directory(20230830/1 source_file_22)
 
 # 输出源文件路径
 message(${source_file_1})
@@ -55,6 +59,7 @@ message(${source_file_18})
 message(${source_file_19})
 message(${source_file_20})
 message(${source_file_21})
+message(${source_file_22})
 
 # 编译得到可执行文件
 add_executable(sample_code_1 ${source_file_1})
@@ -78,3 +83,5 @@ add_executable(sample_code_18 ${source_file_18})
 add_executable(sample_code_19 ${source_file_19})
 add_executable(sample_code_20 ${source_file_19})
 add_executable(sample_code_21 ${source_file_21})
+add_executable(sample_code_22 ${source_file_22})
+target_link_libraries(sample_code_22 "${OpenCV_LIBS}")

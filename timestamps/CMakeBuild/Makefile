@@ -389,6 +389,19 @@ sample_code_21/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_21.dir/build.make CMakeFiles/sample_code_21.dir/build
 .PHONY : sample_code_21/fast
 
+#=============================================================================
+# Target rules for targets named sample_code_22
+
+# Build rule for target.
+sample_code_22: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sample_code_22
+.PHONY : sample_code_22
+
+# fast build rule for target.
+sample_code_22/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_22.dir/build.make CMakeFiles/sample_code_22.dir/build
+.PHONY : sample_code_22/fast
+
 20220319/1/0319-1.o: 20220319/1/0319-1.c.o
 .PHONY : 20220319/1/0319-1.o
 
@@ -872,6 +885,30 @@ sample_code_21/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_21.dir/build.make CMakeFiles/sample_code_21.dir/20230314/3/main.c.s
 .PHONY : 20230314/3/main.c.s
 
+20230830/1/imread.o: 20230830/1/imread.cpp.o
+.PHONY : 20230830/1/imread.o
+
+# target to build an object file
+20230830/1/imread.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_22.dir/build.make CMakeFiles/sample_code_22.dir/20230830/1/imread.cpp.o
+.PHONY : 20230830/1/imread.cpp.o
+
+20230830/1/imread.i: 20230830/1/imread.cpp.i
+.PHONY : 20230830/1/imread.i
+
+# target to preprocess a source file
+20230830/1/imread.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_22.dir/build.make CMakeFiles/sample_code_22.dir/20230830/1/imread.cpp.i
+.PHONY : 20230830/1/imread.cpp.i
+
+20230830/1/imread.s: 20230830/1/imread.cpp.s
+.PHONY : 20230830/1/imread.s
+
+# target to generate assembly for a file
+20230830/1/imread.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_22.dir/build.make CMakeFiles/sample_code_22.dir/20230830/1/imread.cpp.s
+.PHONY : 20230830/1/imread.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -894,6 +931,7 @@ help:
 	@echo "... sample_code_2"
 	@echo "... sample_code_20"
 	@echo "... sample_code_21"
+	@echo "... sample_code_22"
 	@echo "... sample_code_3"
 	@echo "... sample_code_4"
 	@echo "... sample_code_5"
@@ -961,6 +999,9 @@ help:
 	@echo "... 20230314/3/main.o"
 	@echo "... 20230314/3/main.i"
 	@echo "... 20230314/3/main.s"
+	@echo "... 20230830/1/imread.o"
+	@echo "... 20230830/1/imread.i"
+	@echo "... 20230830/1/imread.s"
 .PHONY : help
 
 
