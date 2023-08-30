@@ -82,7 +82,7 @@ void train(
 }
 
 template <typename DataLoader>
-void test(
+float test(
     Net& model,
     torch::Device device,
     DataLoader& data_loader,
@@ -109,6 +109,8 @@ void test(
       "\nTest set: Average loss: %.4f | Accuracy: %.3f\n",
       test_loss,
       static_cast<double>(correct) / dataset_size);
+
+  return test_loss;
 }
 
 auto main() -> int {
@@ -144,8 +146,14 @@ auto main() -> int {
   torch::optim::SGD optimizer(
       model.parameters(), torch::optim::SGDOptions(0.01).momentum(0.5));
 
+  float best_loss = 1;
   for (size_t epoch = 1; epoch <= kNumberOfEpochs; ++epoch) {
     train(epoch, model, device, *train_loader, optimizer, train_dataset_size);
-    test(model, device, *test_loader, test_dataset_size);
+    float test_loss = test(model, device, *test_loader, test_dataset_size);
+    if (test_loss < best_loss) {
+      best_loss = test_loss;
+      std::cout << "Best test loss: " << best_loss << std::endl;
+      torch::save(model.parameters(), "best_model.pt");
+    }
   }
 }
