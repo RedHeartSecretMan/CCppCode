@@ -10,8 +10,8 @@ find_package(OpenCV REQUIRED)
 # 设置 C/CPP 编译器以及标准版本
 set(CMAKE_C_COMPILER "gcc")
 set(CMAKE_CXX_COMPILER "g++")
-set(CMAKE_C_STANDARD 17)
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_C_STANDARD 14)
+set(CMAKE_CXX_STANDARD 14)
 
 # 找到源文件路径
 aux_source_directory(20220319/1 source_file_1)
