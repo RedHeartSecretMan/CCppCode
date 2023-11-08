@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/WangHao/Sites/学习/CCpp/Script/timestamps/CMakeBuild
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/opt/homebrew/Cellar/cmake/3.27.4/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/Cellar/cmake/3.27.7/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/opt/homebrew/Cellar/cmake/3.27.4/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -401,6 +401,32 @@ sample_code_22: cmake_check_build_system
 sample_code_22/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_22.dir/build.make CMakeFiles/sample_code_22.dir/build
 .PHONY : sample_code_22/fast
+
+#=============================================================================
+# Target rules for targets named sample_code_23
+
+# Build rule for target.
+sample_code_23: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sample_code_23
+.PHONY : sample_code_23
+
+# fast build rule for target.
+sample_code_23/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_23.dir/build.make CMakeFiles/sample_code_23.dir/build
+.PHONY : sample_code_23/fast
+
+#=============================================================================
+# Target rules for targets named sample_code_24
+
+# Build rule for target.
+sample_code_24: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sample_code_24
+.PHONY : sample_code_24
+
+# fast build rule for target.
+sample_code_24/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_24.dir/build.make CMakeFiles/sample_code_24.dir/build
+.PHONY : sample_code_24/fast
 
 20220319/1/0319-1.o: 20220319/1/0319-1.c.o
 .PHONY : 20220319/1/0319-1.o
@@ -909,6 +935,54 @@ sample_code_22/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_22.dir/build.make CMakeFiles/sample_code_22.dir/20230830/1/imread.cpp.s
 .PHONY : 20230830/1/imread.cpp.s
 
+20230910/1/1.o: 20230910/1/1.cpp.o
+.PHONY : 20230910/1/1.o
+
+# target to build an object file
+20230910/1/1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_23.dir/build.make CMakeFiles/sample_code_23.dir/20230910/1/1.cpp.o
+.PHONY : 20230910/1/1.cpp.o
+
+20230910/1/1.i: 20230910/1/1.cpp.i
+.PHONY : 20230910/1/1.i
+
+# target to preprocess a source file
+20230910/1/1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_23.dir/build.make CMakeFiles/sample_code_23.dir/20230910/1/1.cpp.i
+.PHONY : 20230910/1/1.cpp.i
+
+20230910/1/1.s: 20230910/1/1.cpp.s
+.PHONY : 20230910/1/1.s
+
+# target to generate assembly for a file
+20230910/1/1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_23.dir/build.make CMakeFiles/sample_code_23.dir/20230910/1/1.cpp.s
+.PHONY : 20230910/1/1.cpp.s
+
+20231108/1/test.o: 20231108/1/test.cpp.o
+.PHONY : 20231108/1/test.o
+
+# target to build an object file
+20231108/1/test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_24.dir/build.make CMakeFiles/sample_code_24.dir/20231108/1/test.cpp.o
+.PHONY : 20231108/1/test.cpp.o
+
+20231108/1/test.i: 20231108/1/test.cpp.i
+.PHONY : 20231108/1/test.i
+
+# target to preprocess a source file
+20231108/1/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_24.dir/build.make CMakeFiles/sample_code_24.dir/20231108/1/test.cpp.i
+.PHONY : 20231108/1/test.cpp.i
+
+20231108/1/test.s: 20231108/1/test.cpp.s
+.PHONY : 20231108/1/test.s
+
+# target to generate assembly for a file
+20231108/1/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_24.dir/build.make CMakeFiles/sample_code_24.dir/20231108/1/test.cpp.s
+.PHONY : 20231108/1/test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -932,6 +1006,8 @@ help:
 	@echo "... sample_code_20"
 	@echo "... sample_code_21"
 	@echo "... sample_code_22"
+	@echo "... sample_code_23"
+	@echo "... sample_code_24"
 	@echo "... sample_code_3"
 	@echo "... sample_code_4"
 	@echo "... sample_code_5"
@@ -1002,6 +1078,12 @@ help:
 	@echo "... 20230830/1/imread.o"
 	@echo "... 20230830/1/imread.i"
 	@echo "... 20230830/1/imread.s"
+	@echo "... 20230910/1/1.o"
+	@echo "... 20230910/1/1.i"
+	@echo "... 20230910/1/1.s"
+	@echo "... 20231108/1/test.o"
+	@echo "... 20231108/1/test.i"
+	@echo "... 20231108/1/test.s"
 .PHONY : help
 
 

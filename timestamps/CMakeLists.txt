@@ -10,8 +10,8 @@ find_package(OpenCV REQUIRED)
 # 设置 C/CPP 编译器以及标准版本
 set(CMAKE_C_COMPILER "gcc")
 set(CMAKE_CXX_COMPILER "g++")
-set(CMAKE_C_STANDARD 14)
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_C_STANDARD 17)
+set(CMAKE_CXX_STANDARD 17)
 
 # 找到源文件路径
 aux_source_directory(20220319/1 source_file_1)
@@ -36,6 +36,8 @@ aux_source_directory(20230314/1 source_file_19)
 aux_source_directory(20230314/2 source_file_20)
 aux_source_directory(20230314/3 source_file_21)
 aux_source_directory(20230830/1 source_file_22)
+aux_source_directory(20230910/1 source_file_23)
+aux_source_directory(20231108/1 source_file_24)
 
 # 输出源文件路径
 message(${source_file_1})
@@ -60,6 +62,8 @@ message(${source_file_19})
 message(${source_file_20})
 message(${source_file_21})
 message(${source_file_22})
+message(${source_file_23})
+message(${source_file_24})
 
 # 编译得到可执行文件
 add_executable(sample_code_1 ${source_file_1})
@@ -84,4 +88,8 @@ add_executable(sample_code_19 ${source_file_19})
 add_executable(sample_code_20 ${source_file_19})
 add_executable(sample_code_21 ${source_file_21})
 add_executable(sample_code_22 ${source_file_22})
+add_executable(sample_code_23 ${source_file_23})
+add_executable(sample_code_24 ${source_file_24})
+
+# 链接外部库
 target_link_libraries(sample_code_22 "${OpenCV_LIBS}")
