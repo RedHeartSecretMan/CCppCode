@@ -39,6 +39,7 @@ aux_source_directory(20230830/1 source_file_22)
 aux_source_directory(20230910/1 source_file_23)
 aux_source_directory(20231108/1 source_file_24)
 aux_source_directory(20231108/2 source_file_25)
+aux_source_directory(20231109/1 source_file_26)
 
 # 输出源文件路径
 message(${source_file_1})
@@ -66,6 +67,7 @@ message(${source_file_22})
 message(${source_file_23})
 message(${source_file_24})
 message(${source_file_25})
+message(${source_file_26})
 
 # 编译得到可执行文件
 add_executable(sample_code_1 ${source_file_1})
@@ -93,6 +95,7 @@ add_executable(sample_code_22 ${source_file_22})
 add_executable(sample_code_23 ${source_file_23})
 add_executable(sample_code_24 ${source_file_24})
 add_executable(sample_code_25 ${source_file_25})
+add_executable(sample_code_26 ${source_file_26})
 
 # 链接外部库
 target_link_libraries(sample_code_22 "${OpenCV_LIBS}")

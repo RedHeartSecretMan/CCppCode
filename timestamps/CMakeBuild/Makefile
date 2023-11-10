@@ -441,6 +441,19 @@ sample_code_25/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_25.dir/build.make CMakeFiles/sample_code_25.dir/build
 .PHONY : sample_code_25/fast
 
+#=============================================================================
+# Target rules for targets named sample_code_26
+
+# Build rule for target.
+sample_code_26: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sample_code_26
+.PHONY : sample_code_26
+
+# fast build rule for target.
+sample_code_26/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_26.dir/build.make CMakeFiles/sample_code_26.dir/build
+.PHONY : sample_code_26/fast
+
 20220319/1/0319-1.o: 20220319/1/0319-1.c.o
 .PHONY : 20220319/1/0319-1.o
 
@@ -1020,6 +1033,30 @@ sample_code_25/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_25.dir/build.make CMakeFiles/sample_code_25.dir/20231108/2/test.cpp.s
 .PHONY : 20231108/2/test.cpp.s
 
+20231109/1/test.o: 20231109/1/test.cpp.o
+.PHONY : 20231109/1/test.o
+
+# target to build an object file
+20231109/1/test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_26.dir/build.make CMakeFiles/sample_code_26.dir/20231109/1/test.cpp.o
+.PHONY : 20231109/1/test.cpp.o
+
+20231109/1/test.i: 20231109/1/test.cpp.i
+.PHONY : 20231109/1/test.i
+
+# target to preprocess a source file
+20231109/1/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_26.dir/build.make CMakeFiles/sample_code_26.dir/20231109/1/test.cpp.i
+.PHONY : 20231109/1/test.cpp.i
+
+20231109/1/test.s: 20231109/1/test.cpp.s
+.PHONY : 20231109/1/test.s
+
+# target to generate assembly for a file
+20231109/1/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_code_26.dir/build.make CMakeFiles/sample_code_26.dir/20231109/1/test.cpp.s
+.PHONY : 20231109/1/test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1046,6 +1083,7 @@ help:
 	@echo "... sample_code_23"
 	@echo "... sample_code_24"
 	@echo "... sample_code_25"
+	@echo "... sample_code_26"
 	@echo "... sample_code_3"
 	@echo "... sample_code_4"
 	@echo "... sample_code_5"
@@ -1125,6 +1163,9 @@ help:
 	@echo "... 20231108/2/test.o"
 	@echo "... 20231108/2/test.i"
 	@echo "... 20231108/2/test.s"
+	@echo "... 20231109/1/test.o"
+	@echo "... 20231109/1/test.i"
+	@echo "... 20231109/1/test.s"
 .PHONY : help
 
 
