@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/train_model
+CMAKE_SOURCE_DIR = /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/use_tensor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/train_model/CMakeBuild
+CMAKE_BINARY_DIR = /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/use_tensor/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/t
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/opt/homebrew/Cellar/cmake/3.27.4/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/Cellar/cmake/3.27.7/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/opt/homebrew/Cellar/cmake/3.27.4/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/train_model/CMakeBuild/CMakeFiles /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/train_model/CMakeBuild//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/use_tensor/build/CMakeFiles /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/use_tensor/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/train_model/CMakeBuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/use_tensor/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,37 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named train_model_demo
+# Target rules for targets named demo
 
 # Build rule for target.
-train_model_demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 train_model_demo
-.PHONY : train_model_demo
+demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo
+.PHONY : demo
 
 # fast build rule for target.
-train_model_demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train_model_demo.dir/build.make CMakeFiles/train_model_demo.dir/build
-.PHONY : train_model_demo/fast
-
-#=============================================================================
-# Target rules for targets named train_model_mnist
-
-# Build rule for target.
-train_model_mnist: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 train_model_mnist
-.PHONY : train_model_mnist
-
-# fast build rule for target.
-train_model_mnist/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train_model_mnist.dir/build.make CMakeFiles/train_model_mnist.dir/build
-.PHONY : train_model_mnist/fast
+demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
+.PHONY : demo/fast
 
 src/demo.o: src/demo.cpp.o
 .PHONY : src/demo.o
 
 # target to build an object file
 src/demo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train_model_demo.dir/build.make CMakeFiles/train_model_demo.dir/src/demo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/demo.cpp.o
 .PHONY : src/demo.cpp.o
 
 src/demo.i: src/demo.cpp.i
@@ -155,7 +142,7 @@ src/demo.i: src/demo.cpp.i
 
 # target to preprocess a source file
 src/demo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train_model_demo.dir/build.make CMakeFiles/train_model_demo.dir/src/demo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/demo.cpp.i
 .PHONY : src/demo.cpp.i
 
 src/demo.s: src/demo.cpp.s
@@ -163,32 +150,8 @@ src/demo.s: src/demo.cpp.s
 
 # target to generate assembly for a file
 src/demo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train_model_demo.dir/build.make CMakeFiles/train_model_demo.dir/src/demo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/demo.cpp.s
 .PHONY : src/demo.cpp.s
-
-src/mnist.o: src/mnist.cpp.o
-.PHONY : src/mnist.o
-
-# target to build an object file
-src/mnist.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train_model_mnist.dir/build.make CMakeFiles/train_model_mnist.dir/src/mnist.cpp.o
-.PHONY : src/mnist.cpp.o
-
-src/mnist.i: src/mnist.cpp.i
-.PHONY : src/mnist.i
-
-# target to preprocess a source file
-src/mnist.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train_model_mnist.dir/build.make CMakeFiles/train_model_mnist.dir/src/mnist.cpp.i
-.PHONY : src/mnist.cpp.i
-
-src/mnist.s: src/mnist.cpp.s
-.PHONY : src/mnist.s
-
-# target to generate assembly for a file
-src/mnist.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train_model_mnist.dir/build.make CMakeFiles/train_model_mnist.dir/src/mnist.cpp.s
-.PHONY : src/mnist.cpp.s
 
 # Help Target
 help:
@@ -198,14 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... train_model_demo"
-	@echo "... train_model_mnist"
+	@echo "... demo"
 	@echo "... src/demo.o"
 	@echo "... src/demo.i"
 	@echo "... src/demo.s"
-	@echo "... src/mnist.o"
-	@echo "... src/mnist.i"
-	@echo "... src/mnist.s"
 .PHONY : help
 
 

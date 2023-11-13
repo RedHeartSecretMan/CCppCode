@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/use_tensor
+CMAKE_SOURCE_DIR = /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/train_model
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/use_tensor/CMakeBuild
+CMAKE_BINARY_DIR = /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/train_model/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/u
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/opt/homebrew/Cellar/cmake/3.27.4/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/Cellar/cmake/3.27.7/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/opt/homebrew/Cellar/cmake/3.27.4/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/use_tensor/CMakeBuild/CMakeFiles /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/use_tensor/CMakeBuild//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/train_model/build/CMakeFiles /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/train_model/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/use_tensor/CMakeBuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/WangHao/Sites/学习/CCpp/Script/codes/LearnLibtorch/train_model/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,37 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named use_tensor_rand
+# Target rules for targets named demo
 
 # Build rule for target.
-use_tensor_rand: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 use_tensor_rand
-.PHONY : use_tensor_rand
+demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo
+.PHONY : demo
 
 # fast build rule for target.
-use_tensor_rand/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/use_tensor_rand.dir/build.make CMakeFiles/use_tensor_rand.dir/build
-.PHONY : use_tensor_rand/fast
+demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
+.PHONY : demo/fast
+
+#=============================================================================
+# Target rules for targets named mnist
+
+# Build rule for target.
+mnist: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mnist
+.PHONY : mnist
+
+# fast build rule for target.
+mnist/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mnist.dir/build.make CMakeFiles/mnist.dir/build
+.PHONY : mnist/fast
 
 src/demo.o: src/demo.cpp.o
 .PHONY : src/demo.o
 
 # target to build an object file
 src/demo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/use_tensor_rand.dir/build.make CMakeFiles/use_tensor_rand.dir/src/demo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/demo.cpp.o
 .PHONY : src/demo.cpp.o
 
 src/demo.i: src/demo.cpp.i
@@ -142,7 +155,7 @@ src/demo.i: src/demo.cpp.i
 
 # target to preprocess a source file
 src/demo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/use_tensor_rand.dir/build.make CMakeFiles/use_tensor_rand.dir/src/demo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/demo.cpp.i
 .PHONY : src/demo.cpp.i
 
 src/demo.s: src/demo.cpp.s
@@ -150,8 +163,32 @@ src/demo.s: src/demo.cpp.s
 
 # target to generate assembly for a file
 src/demo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/use_tensor_rand.dir/build.make CMakeFiles/use_tensor_rand.dir/src/demo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/demo.cpp.s
 .PHONY : src/demo.cpp.s
+
+src/mnist.o: src/mnist.cpp.o
+.PHONY : src/mnist.o
+
+# target to build an object file
+src/mnist.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mnist.dir/build.make CMakeFiles/mnist.dir/src/mnist.cpp.o
+.PHONY : src/mnist.cpp.o
+
+src/mnist.i: src/mnist.cpp.i
+.PHONY : src/mnist.i
+
+# target to preprocess a source file
+src/mnist.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mnist.dir/build.make CMakeFiles/mnist.dir/src/mnist.cpp.i
+.PHONY : src/mnist.cpp.i
+
+src/mnist.s: src/mnist.cpp.s
+.PHONY : src/mnist.s
+
+# target to generate assembly for a file
+src/mnist.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mnist.dir/build.make CMakeFiles/mnist.dir/src/mnist.cpp.s
+.PHONY : src/mnist.cpp.s
 
 # Help Target
 help:
@@ -161,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... use_tensor_rand"
+	@echo "... demo"
+	@echo "... mnist"
 	@echo "... src/demo.o"
 	@echo "... src/demo.i"
 	@echo "... src/demo.s"
+	@echo "... src/mnist.o"
+	@echo "... src/mnist.i"
+	@echo "... src/mnist.s"
 .PHONY : help
 
 
