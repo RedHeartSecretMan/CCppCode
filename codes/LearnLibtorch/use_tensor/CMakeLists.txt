@@ -4,6 +4,13 @@ project(use_tensor)
 find_package(Torch REQUIRED)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
 
+option(BUILD_DEBUG_MODE "Build debug mode" OFF)
+if(BUILD_DEBUG_MODE)
+  set(CMAKE_BUILD_TYPE "Debug")
+else()
+  set(CMAKE_BUILD_TYPE "Release")
+endif()
+
 aux_source_directory(src source_file_list)
 foreach(source_file ${source_file_list})
   message("Processing source file: ${source_file}")

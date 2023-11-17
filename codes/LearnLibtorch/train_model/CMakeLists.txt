@@ -4,6 +4,13 @@ project(train_model)
 find_package(Torch REQUIRED)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
 
+option(BUILD_DEBUG_MODE "Build debug mode" OFF)
+if(BUILD_DEBUG_MODE)
+  set(CMAKE_BUILD_TYPE "Debug")
+else()
+  set(CMAKE_BUILD_TYPE "Release")
+endif()
+
 # 使用 python 脚本下载数据集
 option(DOWNLOAD_MNIST "Download the MNIST dataset from the internet" ON)
 if (DOWNLOAD_MNIST)

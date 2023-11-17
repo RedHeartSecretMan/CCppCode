@@ -4,14 +4,22 @@ cmake_minimum_required(VERSION 3.21 FATAL_ERROR)
 # 设置项目名字
 project(sample_code)
 
-# 寻找外部库路径
-find_package(OpenCV REQUIRED)
-
 # 设置 C/CPP 编译器以及标准版本
 set(CMAKE_C_COMPILER "gcc")
 set(CMAKE_CXX_COMPILER "g++")
 set(CMAKE_C_STANDARD 17)
 set(CMAKE_CXX_STANDARD 17)
+
+# 寻找外部库路径
+find_package(OpenCV REQUIRED)
+
+# 是否构建debug模式
+option(BUILD_DEBUG_MODE "Build debug mode" OFF)
+if(BUILD_DEBUG_MODE)
+  set(CMAKE_BUILD_TYPE "Debug")
+else()
+  set(CMAKE_BUILD_TYPE "Release")
+endif()
 
 # 找到源文件路径
 aux_source_directory(20220319/1 source_file_1)
