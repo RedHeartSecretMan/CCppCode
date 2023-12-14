@@ -18,10 +18,11 @@ cd "$BUILD_DIR" || exit
 
 # 运行 cmake 配置
 echo "Running cmake..."
-cmake ..
+BUILD_TYPE=$1
+cmake -DCMAKE_BUILD_TYPE=$BUILD_TYPE ..
 
 # 构建项目
 echo "Building..."
-cmake --build . --config Release
+cmake --build --config $BUILD_TYPE .
 
 echo "Build process completed."
