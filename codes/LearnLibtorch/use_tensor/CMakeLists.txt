@@ -1,21 +1,3 @@
-cmake_minimum_required(VERSION 3.18 FATAL_ERROR)
-project(use_tensor)
-
-find_package(Torch REQUIRED)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
-
-option(BUILD_DEBUG_MODE "Build debug mode" OFF)
-if(BUILD_DEBUG_MODE)
-  set(CMAKE_BUILD_TYPE "Debug")
-else()
-  set(CMAKE_BUILD_TYPE "Release")
-endif()
-
-aux_source_directory(src source_file_list)
-foreach(source_file ${source_file_list})
-  message("Processing source file: ${source_file}")
-  get_filename_component(source_file_name_we ${source_file} NAME_WE)
-  add_executable(${source_file_name_we} ${source_file})
-  target_link_libraries(${source_file_name_we} "${TORCH_LIBRARIES}")
-  set_property(TARGET ${source_file_name_we} PROPERTY CXX_STANDARD 17)
-endforeach()
+version https://git-lfs.github.com/spec/v1
+oid sha256:9ad8b06e7ccfab2e303ba2b8f0d5e8897e8b46b4b230be971a7cb6d39287c15a
+size 663

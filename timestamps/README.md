@@ -1,4 +1,4 @@
-# Installing OpenCV 
+# Installing OpenCV
 
 ## Linux with Package Manager
 

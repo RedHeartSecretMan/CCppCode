@@ -1,4 +1,14 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <BuildType>"
+    exit 1
+fi
+
+BUILD_TYPE=$1
+
+rm -rf build
 mkdir build
 cd build
-cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pytorch/share/cmake ..
-cmake --build . --config Release  # 具有跨平台一致性，不用管底层的构建系统（如 Make、Ninja、MSBuild 等）
+cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pytorch ..
+cmake --build . --config $BUILD_TYPE
