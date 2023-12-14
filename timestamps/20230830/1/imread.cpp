@@ -2,7 +2,7 @@
 
 int main() {
     // 读取图像
-    cv::Mat image = cv::imread("/Users/WangHao/Desktop/TODO/Data/车牌识别/测试数据/夜间极差/0000000_1690034443852.jpg", cv::IMREAD_COLOR);
+    cv::Mat image = cv::imread("/Users/WangHao/Downloads/0000000_1690034799402.jpg", cv::IMREAD_COLOR);
 
     if (image.empty()) {
         std::cout << "Could not read the image!" << std::endl;
