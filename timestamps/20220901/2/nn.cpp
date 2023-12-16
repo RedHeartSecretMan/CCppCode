@@ -1,17 +1,14 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
-#define maxn 50+10
+
+#define maxn 50 + 10
 
 int a[maxn][maxn];
 
-void putarray( int s[maxn][maxn], int n )
-{
-    for( int i = 0; i < n; i++)
-    {
-        for( int j = 0; j < n; j++)
-        {
-            if( j != 0 )
+void putarray(int s[maxn][maxn], int n) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (j != 0)
                 printf(" ");
             printf("%d", a[i][j]);
         }
@@ -19,29 +16,26 @@ void putarray( int s[maxn][maxn], int n )
     }
 }
 
-int main()
-{
+int main() {
     int n, x, y, t = 0;
     int num = 0;
-    while( ~scanf("%d", &n) )
-    {
-        if( ++num != 1 )
+    while (~scanf("%d", &n)) {
+        if (++num != 1)
             puts("");
         memset(a, 0, sizeof(a));
-        x = 0, y = n-1;
+        x = 0, y = n - 1;
         t = a[x][y] = 1;
-        while(t < n*n)
-        {
-            while(x + 1 < n && !a[x+1][y])
+        while (t < n * n) {
+            while (x + 1 < n && !a[x + 1][y])
                 a[++x][y] = ++t;
-            while(y - 1 >= 0 && !a[x][y-1])
+            while (y - 1 >= 0 && !a[x][y - 1])
                 a[x][--y] = ++t;
-            while(x - 1 >= 0 && !a[x-1][y])
+            while (x - 1 >= 0 && !a[x - 1][y])
                 a[--x][y] = ++t;
-            while(y + 1 < n && !a[x][y+1])
+            while (y + 1 < n && !a[x][y + 1])
                 a[x][++y] = ++t;
         }
-        putarray(a,n);
+        putarray(a, n);
     }
     return 0;
 }
