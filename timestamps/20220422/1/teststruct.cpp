@@ -7,16 +7,14 @@ using namespace std;
 2) 结构体每个成员相对于结构体首地址的偏移量（offset）都是成员大小的整数倍，如有需要编译器会在成员之间加上填充字节（internal adding）
 3) 结构体的总大小为结构体最宽基本类型成员大小的整数倍，如有需要编译器会在最末一个成员之后加上填充字节（trailing padding）字节对齐
 */
-typedef struct TNode
-{
-    bool bool_1;     // 1
-    int int_1;       // 4
-    float float_1;   // 4
-    double double_1; // 8
+typedef struct TNode {
+    bool bool_1;    // 1
+    int int_1;      // 4
+    float float_1;  // 4
+    double double_1;// 8
 } TNode;
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]) {
     /* code */
     TNode a;
     cout << sizeof(a) << endl;

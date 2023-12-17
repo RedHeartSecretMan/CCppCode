@@ -1,10 +1,10 @@
-#include <ctime>
-#include <cstdlib>
 #include <chrono>
+#include <cstdlib>
+#include <ctime>
 #include <iostream>
 
-class Matrix
-{
+
+class Matrix {
     float *data;
 
 public:
@@ -15,12 +15,10 @@ public:
     float operator()(size_t x, size_t y) const { return data[x * m + y]; }
 };
 
-float dot(const Matrix &a, const Matrix &b)
-{
+float dot(const Matrix &a, const Matrix &b) {
     Matrix c(a.n, b.m);
     for (size_t i = 0; i < a.n; ++i)
-        for (size_t j = 0; j < b.m; ++j)
-        {
+        for (size_t j = 0; j < b.m; ++j) {
             float s = 0;
             for (size_t k = 0; k < a.m; ++k)
                 s += a(i, k) * b(k, j);
@@ -29,24 +27,21 @@ float dot(const Matrix &a, const Matrix &b)
     return c(0, 0);
 }
 
-void fill_rand(Matrix &a)
-{
+void fill_rand(Matrix &a) {
     for (size_t i = 0; i < a.n; ++i)
         for (size_t j = 0; j < a.m; ++j)
             a(i, j) = rand() / static_cast<float>(RAND_MAX) * 2 - 1;
 }
 
-int main()
-{
-    srand((unsigned)time(NULL));
+int main() {
+    srand((unsigned) time(NULL));
     const int n = 1000, p = 500, m = 1000, T = 3;
     Matrix a(n, p), b(p, m);
     fill_rand(a);
     fill_rand(b);
     auto st = std::chrono::system_clock::now();
     float s = 0;
-    for (int i = 0; i < T; ++i)
-    {
+    for (int i = 0; i < T; ++i) {
         s += dot(a, b);
     }
     auto ed = std::chrono::system_clock::now();

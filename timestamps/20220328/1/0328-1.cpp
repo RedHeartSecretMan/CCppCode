@@ -1,31 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <iostream>
+
 using namespace std;
 
 int a11 = 3;
 
-bool abc(int a11)
-{
+bool abc(int a11) {
     a11 = 5;
     printf("输出结果%d\n", a11);
     return a11;
 }
 
-int main()
-{
+int main() {
     int a = 2000;
     int *b = &a;
     int c[5] = {0, 1, 2, 3, 4};
     int *d = &c[0];
     int *e = d;
-    int *p = (int *)malloc(5 * sizeof(int));
+    int *p = (int *) malloc(5 * sizeof(int));
     int **q = &p;
     int *y = *q;
     int z = **q;
     int a1 = 1;
     int *p1 = &a1;
-    float *p11 = (float *)p1;
+    float *p11 = (float *) p1;
     char r[] = "wanghao";
     char rr[6] = "wang";
     abc(a11);

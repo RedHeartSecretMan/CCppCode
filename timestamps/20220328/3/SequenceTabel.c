@@ -3,15 +3,13 @@
 #define Size 5
 
 // 定义布尔类型false=0与true=1
-typedef enum
-{
+typedef enum {
     false,
     true
 } bool;
 
 // 定义结构类型SequenceTabel[...]叫ST
-typedef struct SequenceTabel
-{
+typedef struct SequenceTabel {
     int *head;
     int size;
     int length;
@@ -36,17 +34,15 @@ int getST(ST st, int idx);
 /* Destroy */
 bool destroyST(ST st);
 
-ST initST()
-{
+ST initST() {
     ST st;
     /* malloc申请一块连续的指定大小的内存块区域作为数组
     分配成功则返回数组的头指针，否则返回空指针NULL
     calloc(size,sizeof(int))会初始化数组元素为0
     sizeof计算一个int型变量占内存多少单元
     (int *)将指针指向的数据强制转换为整型 */
-    st.head = (int *)malloc(Size * sizeof(int));
-    if (!st.head)
-    {
+    st.head = (int *) malloc(Size * sizeof(int));
+    if (!st.head) {
         printf("没有分配内存");
         exit(0);
     }
@@ -55,12 +51,10 @@ ST initST()
     return st;
 }
 
-int main()
-{
+int main() {
     // 初始化顺序素
     ST st = initST();
-    for (int i = 1; i <= Size; i++)
-    {
+    for (int i = 1; i <= Size; i++) {
         st.head[i - 1] = i;
         st.length++;
     }
@@ -88,12 +82,9 @@ int main()
     int e = 9;
     int idx;
     idx = findST(st, e);
-    if (idx)
-    {
+    if (idx) {
         printf("查询元素%d在的顺序表的序位是%d\n", e, idx);
-    }
-    else
-    {
+    } else {
         printf("查询元素%d不在的顺序表\n", e);
     }
 
@@ -104,12 +95,9 @@ int main()
     // 判空
     bool flag;
     flag = emptyST(st);
-    if (flag)
-    {
+    if (flag) {
         printf("顺序表是空的\n");
-    }
-    else
-    {
+    } else {
         printf("顺序表不是空的\n");
     }
 
@@ -119,41 +107,33 @@ int main()
     return 0;
 }
 
-int lengthST(ST st)
-{
+int lengthST(ST st) {
     int e = st.length;
     return e;
 }
 
-void dispalyST(ST st)
-{
-    for (int i = 0; i < st.length; i++)
-    {
+void dispalyST(ST st) {
+    for (int i = 0; i < st.length; i++) {
         int print = st.head[i];
         printf("打印第%d的值是:%d\n", i, print);
     }
     printf("\n");
 }
 
-ST addST(ST st, int idx, int elem)
-{
-    if ((idx < 0) || (idx > st.length + 1))
-    {
+ST addST(ST st, int idx, int elem) {
+    if ((idx < 0) || (idx > st.length + 1)) {
         printf("插入位置有问题\n");
         return st;
     }
-    if (st.length == st.size)
-    {
-        st.head = (int *)realloc(st.head, (st.size + 1) * sizeof(int));
-        if (!st.head)
-        {
+    if (st.length == st.size) {
+        st.head = (int *) realloc(st.head, (st.size + 1) * sizeof(int));
+        if (!st.head) {
             printf("没有头指针存储空间分配失败\n");
             return st;
         }
         st.size += 1;
     }
-    for (int i = st.length - 1; i >= idx - 1; i--)
-    {
+    for (int i = st.length - 1; i >= idx - 1; i--) {
         st.head[i + 1] = st.head[i];
     }
     st.head[idx - 1] = elem;
@@ -162,54 +142,44 @@ ST addST(ST st, int idx, int elem)
     return st;
 }
 
-ST deleteST(ST st, int idx)
-{
-    if ((idx < 0) || (idx > st.length))
-    {
+ST deleteST(ST st, int idx) {
+    if ((idx < 0) || (idx > st.length)) {
         printf("删除位置有问题\n");
         return st;
     }
     int elem = st.head[idx - 1];
     printf("删除元素%d\n", elem);
-    for (int j = idx; j < st.length; j++)
-    {
+    for (int j = idx; j < st.length; j++) {
         st.head[j - 1] = st.head[j];
     }
     st.length -= 1;
-    st.head = (int *)realloc(st.head, (st.size - 1) * sizeof(int));
+    st.head = (int *) realloc(st.head, (st.size - 1) * sizeof(int));
     st.size -= 1;
     return st;
 }
 
-bool findST(ST st, int elem)
-{
-    for (int i = 0; i < st.length; i++)
-    {
-        if (st.head[i] == elem)
-        {
+bool findST(ST st, int elem) {
+    for (int i = 0; i < st.length; i++) {
+        if (st.head[i] == elem) {
             return i + 1;
         }
     }
     return false;
 }
 
-int getST(ST st, int idx)
-{
+int getST(ST st, int idx) {
     int e = st.head[idx];
     return e;
 }
 
-bool emptyST(ST st)
-{
-    if (st.length == 0)
-    {
+bool emptyST(ST st) {
+    if (st.length == 0) {
         return true;
     }
     return false;
 }
 
-bool destroyST(ST st)
-{
+bool destroyST(ST st) {
     free(st.head);
     st.head = NULL;
     return true;

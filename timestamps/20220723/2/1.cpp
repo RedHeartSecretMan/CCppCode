@@ -1,24 +1,19 @@
-
 #include <iostream>
 using namespace std;
 
-class Test
-{
+class Test {
     static int x;
 
 public:
-    Test()
-    {
+    Test() {
         x++;
     }
-    static int getX()
-    {
+    static int getX() {
         return x;
     }
 };
 int Test::x = 0;
-int main()
-{
+int main() {
     cout << Test::getX() << " ";
     Test t[5];
     cout << Test::getX();

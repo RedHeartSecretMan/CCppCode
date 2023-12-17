@@ -1,5 +1,6 @@
-#include<iostream>
-#include<cstdlib>
+#include <cstdlib>
+#include <iostream>
+
 
 using namespace std;
 
@@ -34,12 +35,10 @@ int main() {
             fa[a] = la[b];
             la[uf_find(b)] = la[a];
             w[a] = 1;
-        }
-        else {
+        } else {
             if (uf_find(a) == uf_find(b)) {
                 printf("%d\n", max(0, abs(w[a] - w[b]) - 1));
-            }
-            else {
+            } else {
                 printf("-1\n");
             }
         }

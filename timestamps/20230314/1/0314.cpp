@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int n = 4; // n为图案的行数
+    int n = 4;// n为图案的行数
     int i, j;
 
     for (i = 1; i <= n; i++) {
