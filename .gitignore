@@ -7,21 +7,18 @@
 .clang-format
 .ipynb_checkpoints
 
+*.dSYM
+*.egg-info
 __pycache__
 
 data
+datas
 build
+builds
+log
 logs
+result
 results
-
-*.dSYM
-*.zip
-*.tar
-*.gz
-*.rar
-*.7z
-*.bz2
-*.xz
 
 *.jpg
 *.jpeg
@@ -40,6 +37,14 @@ results
 *.doc
 *.xls
 *.xlsx
+
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+*.bz2
+*.xz
 
 *.npy
 *.h5
