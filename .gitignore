@@ -7,6 +7,8 @@
 .clang-format
 .ipynb_checkpoints
 
+*.dSYM
+*.egg-info
 __pycache__
 
 data
@@ -14,7 +16,6 @@ build
 logs
 results
 
-*.dSYM
 *.zip
 *.tar
 *.gz
