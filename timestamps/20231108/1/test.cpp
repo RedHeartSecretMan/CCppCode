@@ -2,18 +2,18 @@
 #include <vector>
 using namespace std;
 
-void quicksort(vector<int>& arr, int low, int high);
+void quicksort(vector<int> &arr, int low, int high);
 
 int main() {
-    int n = 0; // number of elements in the array
+    int n = 0;// number of elements in the array
     cout << "Enter the size of the array: ";
     cin >> n;
-    vector<int> arr(n); // create a vector (dynamic array) of size n
+    vector<int> arr(n);// create a vector (dynamic array) of size n
     cout << "Enter " << n << " integers: ";
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-    
+
     // Print the original array
     cout << "Original array: ";
     for (int i = 0; i < n; i++) {
@@ -21,7 +21,7 @@ int main() {
     }
     cout << endl;
 
-    quicksort(arr, 0, n-1);
+    quicksort(arr, 0, n - 1);
 
     // Print the sorted array
     cout << "Sorted array: ";
@@ -33,7 +33,7 @@ int main() {
     return 0;
 }
 
-void quicksort(vector<int>& arr, int low, int high) {
+void quicksort(vector<int> &arr, int low, int high) {
     if (low < high) {
         int pivot = arr[low];
         int less = low + 1;
@@ -53,4 +53,3 @@ void quicksort(vector<int>& arr, int low, int high) {
         quicksort(arr, greater + 1, high);
     }
 }
-
