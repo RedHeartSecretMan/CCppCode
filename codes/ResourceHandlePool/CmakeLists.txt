@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8d623c9f73818721c6049e45dd62717ead128dccdb8fafb6f8057e54235997e8
-size 223
+cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
+
+project(ResourceHandlePool)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+include_directories(include)
+
+add_executable(ResourceHandlePool src/main.cpp)
